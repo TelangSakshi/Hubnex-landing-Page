@@ -1,5 +1,20 @@
 module.exports = {
-  mode: "jit",
+
+ 
+    theme: {
+      screens: {
+        'tablet': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'laptop': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'desktop': '1280px',
+        // => @media (min-width: 1280px) { ... }
+      },
+    },
+  
+mode: "jit",
   content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
   darkMode: "class",
   theme: {
